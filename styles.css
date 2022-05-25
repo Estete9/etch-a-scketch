@@ -1,6 +1,13 @@
 .content {
-  align-self: center;
   display: flex;
+  flex-direction: column;
   height: 730px;
   width: 960px;
+}
+
+#newGrid {
+  align-self: center;
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 8px;
 }
