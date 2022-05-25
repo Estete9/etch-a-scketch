@@ -1,4 +1,6 @@
 .content {
-  border: black 1px solid;
-  display: flexbox;
+  align-self: center;
+  display: flex;
+  height: 730px;
+  width: 960px;
 }
