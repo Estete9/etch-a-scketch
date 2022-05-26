@@ -22,7 +22,7 @@ function createGrid(x = 16) {
       divC.appendChild(divR);
     }
   }
-  changeColorOnMouseOver();
+  startChangeColor();
 }
 
 function changeColorOnMouseOver() {
@@ -33,6 +33,14 @@ function changeColorOnMouseOver() {
       "mouseover",
       () => (cell.style.backgroundColor = "black")
     )
+  );
+}
+
+function startChangeColor() {
+  let cells = Array.from(document.querySelectorAll(".cell"));
+  //   console.log(cells);
+  cells.forEach((cell) =>
+    cell.addEventListener("click", changeColorOnMouseOver)
   );
 }
 
